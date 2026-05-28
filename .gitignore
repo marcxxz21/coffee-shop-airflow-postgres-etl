@@ -7,3 +7,4 @@ logs/
 data/processed/
 data/reports/
 dist/
+.vercel
