@@ -1,4 +1,6 @@
 {
+  "name": "brewline-sales-analytics",
+  "private": true,
   "scripts": {
     "build": "node tools/build_static_dashboard_data.mjs"
   },

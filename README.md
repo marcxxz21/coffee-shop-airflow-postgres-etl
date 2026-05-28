@@ -1,18 +1,18 @@
-# Coffee Shop Sales ETL Dashboard
+# Brewline Sales Analytics
 
-End-to-end coffee shop sales data pipeline built with Apache Airflow, Python, pandas, PostgreSQL, SQLAlchemy, Docker, and a public sales dashboard.
+End-to-end retail sales analytics project built with Apache Airflow, Python, pandas, PostgreSQL, SQLAlchemy, Docker, and a public Vercel dashboard.
 
-The pipeline extracts transaction data from Excel, cleans and validates the records, loads the processed data into PostgreSQL, generates CSV business reports, and publishes a professional online dashboard for sales performance analysis.
+The pipeline extracts transaction data from Excel, cleans and validates the records, loads the processed data into PostgreSQL, generates CSV business reports, and publishes a professional online dashboard for revenue and product performance analysis.
 
 ## Live Dashboard
 
-[View the dashboard](https://coffeeshopetl.vercel.app)
+[View Brewline Sales Analytics](https://brewline-sales-analytics.vercel.app)
 
 The public dashboard is a deployed static sales snapshot, so it stays available even when local Docker, Airflow, and PostgreSQL are not running.
 
 ## GitHub Repository
 
-[marcxxz21/coffee-shop-airflow-postgres-etl](https://github.com/marcxxz21/coffee-shop-airflow-postgres-etl)
+[marcxxz21/brewline-sales-analytics](https://github.com/marcxxz21/brewline-sales-analytics)
 
 ## Dashboard Highlights
 
@@ -56,7 +56,7 @@ Airflow and PostgreSQL run locally with Docker for the ETL workflow. The deploye
 ## Project Structure
 
 ```text
-coffee_shop_etl/
+brewline-sales-analytics/
 ├── dags/
 │   └── coffee_sales_dag.py
 ├── dashboard/
@@ -216,7 +216,7 @@ http://localhost:4173
 
 The production dashboard is deployed to Vercel:
 
-[https://coffeeshopetl.vercel.app](https://coffeeshopetl.vercel.app)
+[https://brewline-sales-analytics.vercel.app](https://brewline-sales-analytics.vercel.app)
 
 The Vercel build uses:
 
@@ -290,8 +290,8 @@ The real `.streamlit/secrets.toml` file is ignored by Git.
 
 ## Portfolio Description
 
-Built an end-to-end coffee shop sales data pipeline using Apache Airflow, Python, pandas, PostgreSQL, SQLAlchemy, Docker, and Vercel. The Airflow pipeline extracts Excel sales data, cleans and validates transaction records, loads the processed data into PostgreSQL, and generates CSV business reports. A public dashboard visualizes revenue trends, product category performance, store performance, and best-selling products.
+Built Brewline Sales Analytics, an end-to-end retail sales data pipeline using Apache Airflow, Python, pandas, PostgreSQL, SQLAlchemy, Docker, and Vercel. The Airflow pipeline extracts Excel sales data, cleans and validates transaction records, loads the processed data into PostgreSQL, and generates CSV business reports. A public dashboard visualizes revenue trends, product category performance, store performance, and best-selling products.
 
 Short version:
 
-End-to-end coffee shop sales ETL pipeline using Airflow, Python, PostgreSQL, Docker, and a public Vercel dashboard.
+Brewline Sales Analytics is an end-to-end sales ETL pipeline using Airflow, Python, PostgreSQL, Docker, and a public Vercel dashboard.

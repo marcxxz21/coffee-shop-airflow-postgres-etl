@@ -13,7 +13,7 @@ default_args = {
 with DAG(
     dag_id="coffee_shop_sales_postgres_etl",
     default_args=default_args,
-    description="ETL pipeline for coffee shop sales Excel data using PostgreSQL",
+    description="ETL pipeline for Brewline retail sales Excel data using PostgreSQL",
     start_date=datetime(2026, 5, 1),
     schedule="@daily",
     catchup=False,

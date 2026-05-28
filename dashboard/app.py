@@ -17,7 +17,7 @@ BORDER_COLOR = "#e4e4e7"
 
 
 st.set_page_config(
-    page_title="Coffee Shop Sales Dashboard",
+    page_title="Brewline Sales Analytics",
     layout="wide",
 )
 
@@ -387,7 +387,7 @@ def render_header(df: pd.DataFrame) -> None:
         st.markdown(
             """
             <div class="eyebrow">Airflow to PostgreSQL to Streamlit</div>
-            <h1 class="hero-title">Coffee sales command view.</h1>
+            <h1 class="hero-title">Retail sales intelligence.</h1>
             <p class="hero-copy">
                 A compact operating dashboard for tracking revenue, product demand,
                 store performance, and daily transaction rhythm from the ETL pipeline.

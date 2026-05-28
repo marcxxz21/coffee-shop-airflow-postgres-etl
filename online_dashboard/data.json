@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-28T17:50:18.867Z",
-  "source": "Coffee shop sales ETL output",
+  "generatedAt": "2026-05-28T18:09:53.751Z",
+  "source": "Brewline Sales Analytics ETL output",
   "totals": {
     "totalSales": 698812.33,
     "transactions": 149116,

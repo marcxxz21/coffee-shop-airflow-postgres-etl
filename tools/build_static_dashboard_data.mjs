@@ -148,7 +148,7 @@ async function regenerateDataJson() {
 
   const payload = {
     generatedAt: new Date().toISOString(),
-    source: "Coffee shop sales ETL output",
+    source: "Brewline Sales Analytics ETL output",
     totals: {
       totalSales: roundMoney(totalSales),
       transactions: transactionIds.size,
