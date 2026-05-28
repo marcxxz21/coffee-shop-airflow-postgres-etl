@@ -1,10 +1,28 @@
-# Coffee Shop Airflow PostgreSQL ETL
+# Coffee Shop Sales ETL Dashboard
 
-This project is an end-to-end coffee shop sales ETL pipeline built with Apache Airflow, Python, pandas, PostgreSQL, SQLAlchemy, Docker, and Streamlit.
+End-to-end coffee shop sales data pipeline built with Apache Airflow, Python, pandas, PostgreSQL, SQLAlchemy, Docker, and a public sales dashboard.
 
-The pipeline extracts transaction data from an Excel file, cleans and validates the records, loads the processed data into a PostgreSQL database, generates automated sales reports, and powers a Streamlit dashboard for revenue, product, and store analysis.
+The pipeline extracts transaction data from Excel, cleans and validates the records, loads the processed data into PostgreSQL, generates CSV business reports, and publishes a professional online dashboard for sales performance analysis.
 
-Apache Airflow is used to orchestrate, schedule, and monitor each stage of the workflow.
+## Live Dashboard
+
+[View the dashboard](https://coffeeshopetl.vercel.app)
+
+The public dashboard is a deployed static sales snapshot, so it stays available even when local Docker, Airflow, and PostgreSQL are not running.
+
+## GitHub Repository
+
+[marcxxz21/coffee-shop-airflow-postgres-etl](https://github.com/marcxxz21/coffee-shop-airflow-postgres-etl)
+
+## Dashboard Highlights
+
+- Total sales, transaction volume, items sold, and average order value
+- Daily revenue performance
+- Revenue by product category
+- Store revenue comparison
+- Best-selling products
+- Transaction detail sample
+- Store and category filters
 
 ## Tech Stack
 
@@ -18,7 +36,22 @@ Apache Airflow is used to orchestrate, schedule, and monitor each stage of the w
 - DBeaver
 - Streamlit
 - Plotly
-- Neon PostgreSQL
+- Vercel
+- JavaScript, HTML, and CSS for the public static dashboard
+
+## Architecture
+
+```text
+coffee_shop_sales.xlsx
+    -> Airflow DAG
+    -> Python ETL scripts
+    -> PostgreSQL sales table
+    -> CSV reports
+    -> Static dashboard snapshot
+    -> Vercel public dashboard
+```
+
+Airflow and PostgreSQL run locally with Docker for the ETL workflow. The deployed Vercel dashboard uses a generated snapshot of the cleaned sales data, which makes the public dashboard independent from the local Docker database.
 
 ## Project Structure
 
@@ -28,6 +61,13 @@ coffee_shop_etl/
 │   └── coffee_sales_dag.py
 ├── dashboard/
 │   └── app.py
+├── online_dashboard/
+│   ├── app.js
+│   ├── data.json
+│   ├── index.html
+│   └── styles.css
+├── tools/
+│   └── build_static_dashboard_data.mjs
 ├── data/
 │   ├── raw/
 │   │   └── coffee_shop_sales.xlsx
@@ -52,7 +92,9 @@ coffee_shop_etl/
 │       └── helpers.py
 ├── Dockerfile
 ├── docker-compose.yaml
+├── package.json
 ├── requirements.txt
+├── vercel.json
 ├── .streamlit/
 │   └── secrets.toml.example
 ├── .env.example
@@ -60,23 +102,27 @@ coffee_shop_etl/
 └── README.md
 ```
 
-## Pipeline Steps
+## ETL Pipeline Steps
 
 1. Extract sales data from `data/raw/coffee_shop_sales.xlsx`.
-2. Transform column names, data types, text fields, dates, times, and sales totals.
-3. Validate required fields, positive values, unique transactions, and total amount calculations.
-4. Load cleaned records into PostgreSQL table `sales`.
-5. Generate CSV reports in `data/reports/`.
-6. Visualize the loaded data in the Streamlit dashboard.
+2. Standardize column names and clean text fields.
+3. Convert dates, times, numeric fields, and sales totals.
+4. Remove invalid rows and duplicate transaction IDs.
+5. Validate required fields, positive values, unique transactions, and total amount calculations.
+6. Load cleaned records into PostgreSQL table `sales`.
+7. Generate CSV reports by date, category, store, and product.
+8. Build a static dashboard data snapshot for online hosting.
 
 ## Reports
 
-- Daily sales report
-- Product category sales report
-- Store location sales report
-- Top products report
+The ETL creates these reports in `data/reports/`:
 
-## Setup
+- `daily_sales_report.csv`
+- `category_sales_report.csv`
+- `store_sales_report.csv`
+- `top_products_report.csv`
+
+## Local Setup
 
 Install:
 
@@ -101,9 +147,13 @@ POSTGRES_PORT=5432
 POSTGRES_SSLMODE=prefer
 ```
 
-For Neon or another cloud PostgreSQL database, set `POSTGRES_SSLMODE=require`.
+For Neon or another cloud PostgreSQL database, set:
 
-## Run With Docker
+```env
+POSTGRES_SSLMODE=require
+```
+
+## Run the ETL With Docker
 
 Build and start the services:
 
@@ -142,17 +192,52 @@ After the DAG runs successfully, refresh the database connection and open:
 Schemas > public > Tables > sales
 ```
 
-## Streamlit Dashboard
+## Run the Static Dashboard Locally
 
-The dashboard is located at:
+Build the dashboard snapshot:
+
+```bash
+npm run build
+```
+
+Serve the generated files from `dist/`:
+
+```bash
+python3 -m http.server 4173 --directory dist
+```
+
+Open:
+
+```text
+http://localhost:4173
+```
+
+## Deploy the Static Dashboard
+
+The production dashboard is deployed to Vercel:
+
+[https://coffeeshopetl.vercel.app](https://coffeeshopetl.vercel.app)
+
+The Vercel build uses:
+
+```bash
+npm run build
+```
+
+and serves the generated `dist/` directory.
+
+## Optional Streamlit Dashboard
+
+The repo also includes a Streamlit dashboard at:
 
 ```text
 dashboard/app.py
 ```
 
-For local dashboard testing against your Docker PostgreSQL database, keep Docker running and run:
+For local testing against Docker PostgreSQL:
 
 ```bash
+pip install -r requirements.txt
 streamlit run dashboard/app.py
 ```
 
@@ -162,17 +247,17 @@ Then open:
 http://localhost:8501
 ```
 
-For online deployment, use Neon PostgreSQL and Streamlit Community Cloud.
+For a live Streamlit deployment, use Neon PostgreSQL and Streamlit Community Cloud.
 
 ## Streamlit Secrets
 
-Copy the example secrets file:
+Copy:
 
 ```text
 .streamlit/secrets.toml.example
 ```
 
-Create a local file named:
+Create:
 
 ```text
 .streamlit/secrets.toml
@@ -192,30 +277,6 @@ sslmode = "require"
 
 The real `.streamlit/secrets.toml` file is ignored by Git.
 
-## Online Deployment
-
-Recommended portfolio architecture:
-
-```text
-coffee_shop_sales.xlsx
-    -> Airflow ETL pipeline
-    -> Neon PostgreSQL
-    -> Streamlit dashboard
-    -> Public Streamlit app link
-```
-
-Deployment steps:
-
-1. Create a Neon PostgreSQL database.
-2. Update `.env` with Neon connection values and `POSTGRES_SSLMODE=require`.
-3. Run the Airflow DAG locally to load the `sales` table into Neon.
-4. Push this project to GitHub.
-5. Deploy `dashboard/app.py` from Streamlit Community Cloud.
-6. Add the same `[postgres]` secrets in the Streamlit app settings.
-7. Redeploy the app and copy the public dashboard link.
-
-The Airflow pipeline can stay local for this beginner portfolio. The dashboard is online because it reads from the cloud PostgreSQL database.
-
 ## PostgreSQL vs SQLite
 
 | Part | SQLite Version | PostgreSQL Version |
@@ -229,8 +290,8 @@ The Airflow pipeline can stay local for this beginner portfolio. The dashboard i
 
 ## Portfolio Description
 
-Built an end-to-end coffee shop sales data pipeline using Apache Airflow, Python, pandas, PostgreSQL, Docker, and Streamlit. The Airflow pipeline extracts and cleans Excel sales data, validates the records, and loads the processed data into PostgreSQL. A Streamlit dashboard visualizes sales trends, product performance, store performance, and top-selling products.
+Built an end-to-end coffee shop sales data pipeline using Apache Airflow, Python, pandas, PostgreSQL, SQLAlchemy, Docker, and Vercel. The Airflow pipeline extracts Excel sales data, cleans and validates transaction records, loads the processed data into PostgreSQL, and generates CSV business reports. A public dashboard visualizes revenue trends, product category performance, store performance, and best-selling products.
 
 Short version:
 
-End-to-end ETL pipeline using Airflow, Python, PostgreSQL, Docker, and Streamlit for automated coffee shop sales reporting.
+End-to-end coffee shop sales ETL pipeline using Airflow, Python, PostgreSQL, Docker, and a public Vercel dashboard.
