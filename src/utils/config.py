@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+from urllib.parse import quote_plus
 
 BASE_DIR = Path(__file__).resolve().parents[2]
 
@@ -25,12 +26,16 @@ POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")
 
 POSTGRES_PORT = os.getenv("POSTGRES_PORT", "5433")
 
+POSTGRES_SSLMODE = os.getenv("POSTGRES_SSLMODE", "prefer")
+
 DATABASE_URL = (
 
-    f"postgresql+psycopg2://{POSTGRES_USER}:"
+    f"postgresql+psycopg2://{quote_plus(POSTGRES_USER)}:"
 
-    f"{POSTGRES_PASSWORD}@{POSTGRES_HOST}:"
+    f"{quote_plus(POSTGRES_PASSWORD)}@{POSTGRES_HOST}:"
 
-    f"{POSTGRES_PORT}/{POSTGRES_DB}"
+    f"{POSTGRES_PORT}/{quote_plus(POSTGRES_DB)}"
+
+    f"?sslmode={quote_plus(POSTGRES_SSLMODE)}"
 
 )

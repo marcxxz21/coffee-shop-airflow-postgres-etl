@@ -1,8 +1,8 @@
 # Coffee Shop Airflow PostgreSQL ETL
 
-This project is an end-to-end coffee shop sales ETL pipeline built with Apache Airflow, Python, pandas, PostgreSQL, SQLAlchemy, and Docker.
+This project is an end-to-end coffee shop sales ETL pipeline built with Apache Airflow, Python, pandas, PostgreSQL, SQLAlchemy, Docker, and Streamlit.
 
-The pipeline extracts transaction data from an Excel file, cleans and validates the records, loads the processed data into a PostgreSQL database, and generates automated sales reports by date, product category, store location, and top products.
+The pipeline extracts transaction data from an Excel file, cleans and validates the records, loads the processed data into a PostgreSQL database, generates automated sales reports, and powers a Streamlit dashboard for revenue, product, and store analysis.
 
 Apache Airflow is used to orchestrate, schedule, and monitor each stage of the workflow.
 
@@ -16,6 +16,9 @@ Apache Airflow is used to orchestrate, schedule, and monitor each stage of the w
 - SQLAlchemy
 - SQL
 - DBeaver
+- Streamlit
+- Plotly
+- Neon PostgreSQL
 
 ## Project Structure
 
@@ -23,6 +26,8 @@ Apache Airflow is used to orchestrate, schedule, and monitor each stage of the w
 coffee_shop_etl/
 ├── dags/
 │   └── coffee_sales_dag.py
+├── dashboard/
+│   └── app.py
 ├── data/
 │   ├── raw/
 │   │   └── coffee_shop_sales.xlsx
@@ -48,6 +53,8 @@ coffee_shop_etl/
 ├── Dockerfile
 ├── docker-compose.yaml
 ├── requirements.txt
+├── .streamlit/
+│   └── secrets.toml.example
 ├── .env.example
 ├── .gitignore
 └── README.md
@@ -60,6 +67,7 @@ coffee_shop_etl/
 3. Validate required fields, positive values, unique transactions, and total amount calculations.
 4. Load cleaned records into PostgreSQL table `sales`.
 5. Generate CSV reports in `data/reports/`.
+6. Visualize the loaded data in the Streamlit dashboard.
 
 ## Reports
 
@@ -90,7 +98,10 @@ POSTGRES_PASSWORD=coffee_password
 POSTGRES_DB=coffee_sales_db
 POSTGRES_HOST=postgres
 POSTGRES_PORT=5432
+POSTGRES_SSLMODE=prefer
 ```
+
+For Neon or another cloud PostgreSQL database, set `POSTGRES_SSLMODE=require`.
 
 ## Run With Docker
 
@@ -131,6 +142,80 @@ After the DAG runs successfully, refresh the database connection and open:
 Schemas > public > Tables > sales
 ```
 
+## Streamlit Dashboard
+
+The dashboard is located at:
+
+```text
+dashboard/app.py
+```
+
+For local dashboard testing against your Docker PostgreSQL database, keep Docker running and run:
+
+```bash
+streamlit run dashboard/app.py
+```
+
+Then open:
+
+```text
+http://localhost:8501
+```
+
+For online deployment, use Neon PostgreSQL and Streamlit Community Cloud.
+
+## Streamlit Secrets
+
+Copy the example secrets file:
+
+```text
+.streamlit/secrets.toml.example
+```
+
+Create a local file named:
+
+```text
+.streamlit/secrets.toml
+```
+
+Use your Neon database values:
+
+```toml
+[postgres]
+host = "your_neon_host"
+port = 5432
+database = "your_neon_database"
+user = "your_neon_user"
+password = "your_neon_password"
+sslmode = "require"
+```
+
+The real `.streamlit/secrets.toml` file is ignored by Git.
+
+## Online Deployment
+
+Recommended portfolio architecture:
+
+```text
+coffee_shop_sales.xlsx
+    -> Airflow ETL pipeline
+    -> Neon PostgreSQL
+    -> Streamlit dashboard
+    -> Public Streamlit app link
+```
+
+Deployment steps:
+
+1. Create a Neon PostgreSQL database.
+2. Update `.env` with Neon connection values and `POSTGRES_SSLMODE=require`.
+3. Run the Airflow DAG locally to load the `sales` table into Neon.
+4. Push this project to GitHub.
+5. Deploy `dashboard/app.py` from Streamlit Community Cloud.
+6. Add the same `[postgres]` secrets in the Streamlit app settings.
+7. Redeploy the app and copy the public dashboard link.
+
+The Airflow pipeline can stay local for this beginner portfolio. The dashboard is online because it reads from the cloud PostgreSQL database.
+
 ## PostgreSQL vs SQLite
 
 | Part | SQLite Version | PostgreSQL Version |
@@ -144,8 +229,8 @@ Schemas > public > Tables > sales
 
 ## Portfolio Description
 
-Built an end-to-end coffee shop sales ETL pipeline using Apache Airflow, Python, pandas, PostgreSQL, SQLAlchemy, and Docker. The pipeline extracts sales data from an Excel file, cleans and validates transaction records, loads the processed data into PostgreSQL, and generates automated business reports for daily sales, product categories, store locations, and top-selling products.
+Built an end-to-end coffee shop sales data pipeline using Apache Airflow, Python, pandas, PostgreSQL, Docker, and Streamlit. The Airflow pipeline extracts and cleans Excel sales data, validates the records, and loads the processed data into PostgreSQL. A Streamlit dashboard visualizes sales trends, product performance, store performance, and top-selling products.
 
 Short version:
 
-End-to-end ETL pipeline using Airflow, Python, PostgreSQL, and Docker for automated coffee shop sales reporting.
+End-to-end ETL pipeline using Airflow, Python, PostgreSQL, Docker, and Streamlit for automated coffee shop sales reporting.
