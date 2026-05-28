@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Coffee shop sales dashboard built from an Airflow, PostgreSQL, and Streamlit data pipeline."
+    />
+    <title>Coffee Shop Sales Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Airflow ETL portfolio dashboard</p>
+          <h1>Coffee sales command view.</h1>
+          <p>
+            Public dashboard for the cleaned PostgreSQL sales dataset. It stays available online
+            even when the local Docker services are stopped.
+          </p>
+          <div class="status-row">
+            <span><i></i> Online snapshot</span>
+            <span>149k transactions</span>
+            <span>GitHub deployed</span>
+          </div>
+        </div>
+
+        <aside class="metric-cluster" aria-label="Key sales metrics">
+          <div class="metric-card wide">
+            <span>Total sales</span>
+            <strong id="totalSales">Loading</strong>
+          </div>
+          <div class="metric-card">
+            <span>Transactions</span>
+            <strong id="transactions">Loading</strong>
+          </div>
+          <div class="metric-card">
+            <span>Items sold</span>
+            <strong id="itemsSold">Loading</strong>
+          </div>
+          <div class="metric-card">
+            <span>Avg order</span>
+            <strong id="averageOrder">Loading</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="controls" aria-label="Dashboard filters">
+        <label>
+          Store
+          <select id="storeFilter">
+            <option value="all">All stores</option>
+          </select>
+        </label>
+        <label>
+          Category
+          <select id="categoryFilter">
+            <option value="all">All categories</option>
+          </select>
+        </label>
+        <button id="resetFilters" type="button">Reset filters</button>
+      </section>
+
+      <section id="loadingState" class="state-grid" aria-label="Loading dashboard">
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+        <div class="skeleton span"></div>
+      </section>
+
+      <section id="errorState" class="notice hidden" aria-live="polite">
+        <h2>Dashboard data could not load</h2>
+        <p>Refresh the page or check that <code>online_dashboard/data.json</code> is deployed.</p>
+      </section>
+
+      <section id="dashboardContent" class="dashboard hidden">
+        <article class="panel revenue-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-label">Revenue trend</p>
+              <h2>Daily rhythm</h2>
+            </div>
+            <span id="dateRange">Snapshot</span>
+          </div>
+          <div id="lineChart" class="line-chart" role="img" aria-label="Daily revenue line chart"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-label">Category mix</p>
+              <h2>Product families</h2>
+            </div>
+          </div>
+          <div id="categoryBars" class="bar-stack"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-label">Store performance</p>
+              <h2>Location split</h2>
+            </div>
+          </div>
+          <div id="storeBars" class="bar-stack"></div>
+        </article>
+
+        <article class="panel products-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-label">Top products</p>
+              <h2>Highest grossing items</h2>
+            </div>
+          </div>
+          <div id="productList" class="product-list"></div>
+        </article>
+
+        <article class="panel table-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="section-label">Transaction sample</p>
+              <h2>Recent records</h2>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Date</th>
+                  <th>Store</th>
+                  <th>Category</th>
+                  <th>Product</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="sampleRows"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

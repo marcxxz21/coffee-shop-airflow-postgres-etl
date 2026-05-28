@@ -1,0 +1,3338 @@
+{
+  "generatedAt": "2026-05-28T17:50:18.867Z",
+  "source": "Coffee shop sales ETL output",
+  "totals": {
+    "totalSales": 698812.33,
+    "transactions": 149116,
+    "itemsSold": 214470,
+    "averageOrder": 4.69,
+    "categories": 9,
+    "stores": 3
+  },
+  "filters": {
+    "categories": [
+      "Bakery",
+      "Branded",
+      "Coffee",
+      "Coffee beans",
+      "Drinking Chocolate",
+      "Flavours",
+      "Loose Tea",
+      "Packaged Chocolate",
+      "Tea"
+    ],
+    "stores": [
+      "Astoria",
+      "Hell's Kitchen",
+      "Lower Manhattan"
+    ]
+  },
+  "daily": [
+    {
+      "date": "2023-01-01",
+      "totalSales": 2508.2,
+      "itemsSold": 802,
+      "transactions": 550
+    },
+    {
+      "date": "2023-01-02",
+      "totalSales": 2403.35,
+      "itemsSold": 790,
+      "transactions": 566
+    },
+    {
+      "date": "2023-01-03",
+      "totalSales": 2565,
+      "itemsSold": 823,
+      "transactions": 582
+    },
+    {
+      "date": "2023-01-04",
+      "totalSales": 2220.1,
+      "itemsSold": 726,
+      "transactions": 497
+    },
+    {
+      "date": "2023-01-05",
+      "totalSales": 2418.85,
+      "itemsSold": 778,
+      "transactions": 547
+    },
+    {
+      "date": "2023-01-06",
+      "totalSales": 2273.85,
+      "itemsSold": 736,
+      "transactions": 509
+    },
+    {
+      "date": "2023-01-07",
+      "totalSales": 2619.65,
+      "itemsSold": 799,
+      "transactions": 562
+    },
+    {
+      "date": "2023-01-08",
+      "totalSales": 2638.53,
+      "itemsSold": 806,
+      "transactions": 562
+    },
+    {
+      "date": "2023-01-09",
+      "totalSales": 2676.61,
+      "itemsSold": 742,
+      "transactions": 551
+    },
+    {
+      "date": "2023-01-10",
+      "totalSales": 2685.65,
+      "itemsSold": 855,
+      "transactions": 602
+    },
+    {
+      "date": "2023-01-11",
+      "totalSales": 2555.75,
+      "itemsSold": 782,
+      "transactions": 561
+    },
+    {
+      "date": "2023-01-12",
+      "totalSales": 2327.7,
+      "itemsSold": 759,
+      "transactions": 534
+    },
+    {
+      "date": "2023-01-13",
+      "totalSales": 3033.6,
+      "itemsSold": 950,
+      "transactions": 625
+    },
+    {
+      "date": "2023-01-14",
+      "totalSales": 2682.51,
+      "itemsSold": 771,
+      "transactions": 577
+    },
+    {
+      "date": "2023-01-15",
+      "totalSales": 3167.71,
+      "itemsSold": 927,
+      "transactions": 663
+    },
+    {
+      "date": "2023-01-16",
+      "totalSales": 2829.16,
+      "itemsSold": 855,
+      "transactions": 627
+    },
+    {
+      "date": "2023-01-17",
+      "totalSales": 3285.8,
+      "itemsSold": 762,
+      "transactions": 532
+    },
+    {
+      "date": "2023-01-18",
+      "totalSales": 2735.96,
+      "itemsSold": 827,
+      "transactions": 588
+    },
+    {
+      "date": "2023-01-19",
+      "totalSales": 2913.68,
+      "itemsSold": 858,
+      "transactions": 616
+    },
+    {
+      "date": "2023-01-20",
+      "totalSales": 2603.73,
+      "itemsSold": 767,
+      "transactions": 578
+    },
+    {
+      "date": "2023-01-21",
+      "totalSales": 3082.85,
+      "itemsSold": 878,
+      "transactions": 597
+    },
+    {
+      "date": "2023-01-22",
+      "totalSales": 2367.33,
+      "itemsSold": 768,
+      "transactions": 491
+    },
+    {
+      "date": "2023-01-23",
+      "totalSales": 2853.15,
+      "itemsSold": 885,
+      "transactions": 589
+    },
+    {
+      "date": "2023-01-24",
+      "totalSales": 2868.95,
+      "itemsSold": 883,
+      "transactions": 588
+    },
+    {
+      "date": "2023-01-25",
+      "totalSales": 2846.55,
+      "itemsSold": 906,
+      "transactions": 583
+    },
+    {
+      "date": "2023-01-26",
+      "totalSales": 2863.03,
+      "itemsSold": 887,
+      "transactions": 586
+    },
+    {
+      "date": "2023-01-27",
+      "totalSales": 2742.1,
+      "itemsSold": 886,
+      "transactions": 579
+    },
+    {
+      "date": "2023-01-28",
+      "totalSales": 2037.1,
+      "itemsSold": 672,
+      "transactions": 470
+    },
+    {
+      "date": "2023-01-29",
+      "totalSales": 2060.75,
+      "itemsSold": 652,
+      "transactions": 459
+    },
+    {
+      "date": "2023-01-30",
+      "totalSales": 2476.41,
+      "itemsSold": 693,
+      "transactions": 481
+    },
+    {
+      "date": "2023-01-31",
+      "totalSales": 2334.13,
+      "itemsSold": 645,
+      "transactions": 462
+    },
+    {
+      "date": "2023-02-01",
+      "totalSales": 2466.3,
+      "itemsSold": 796,
+      "transactions": 546
+    },
+    {
+      "date": "2023-02-02",
+      "totalSales": 2506.9,
+      "itemsSold": 814,
+      "transactions": 569
+    },
+    {
+      "date": "2023-02-03",
+      "totalSales": 2591.45,
+      "itemsSold": 834,
+      "transactions": 586
+    },
+    {
+      "date": "2023-02-04",
+      "totalSales": 2551.7,
+      "itemsSold": 834,
+      "transactions": 584
+    },
+    {
+      "date": "2023-02-05",
+      "totalSales": 2304.7,
+      "itemsSold": 748,
+      "transactions": 533
+    },
+    {
+      "date": "2023-02-06",
+      "totalSales": 2203.4,
+      "itemsSold": 712,
+      "transactions": 489
+    },
+    {
+      "date": "2023-02-07",
+      "totalSales": 2434.55,
+      "itemsSold": 769,
+      "transactions": 546
+    },
+    {
+      "date": "2023-02-08",
+      "totalSales": 2762.43,
+      "itemsSold": 844,
+      "transactions": 599
+    },
+    {
+      "date": "2023-02-09",
+      "totalSales": 2610.63,
+      "itemsSold": 761,
+      "transactions": 562
+    },
+    {
+      "date": "2023-02-10",
+      "totalSales": 2901.6,
+      "itemsSold": 918,
+      "transactions": 635
+    },
+    {
+      "date": "2023-02-11",
+      "totalSales": 2526.74,
+      "itemsSold": 784,
+      "transactions": 567
+    },
+    {
+      "date": "2023-02-12",
+      "totalSales": 2894,
+      "itemsSold": 872,
+      "transactions": 607
+    },
+    {
+      "date": "2023-02-13",
+      "totalSales": 2845.48,
+      "itemsSold": 904,
+      "transactions": 593
+    },
+    {
+      "date": "2023-02-14",
+      "totalSales": 2673.93,
+      "itemsSold": 796,
+      "transactions": 587
+    },
+    {
+      "date": "2023-02-15",
+      "totalSales": 2928.05,
+      "itemsSold": 878,
+      "transactions": 624
+    },
+    {
+      "date": "2023-02-16",
+      "totalSales": 3023.33,
+      "itemsSold": 872,
+      "transactions": 639
+    },
+    {
+      "date": "2023-02-17",
+      "totalSales": 2300.75,
+      "itemsSold": 736,
+      "transactions": 534
+    },
+    {
+      "date": "2023-02-18",
+      "totalSales": 2865.48,
+      "itemsSold": 827,
+      "transactions": 594
+    },
+    {
+      "date": "2023-02-19",
+      "totalSales": 3219.6,
+      "itemsSold": 948,
+      "transactions": 692
+    },
+    {
+      "date": "2023-02-20",
+      "totalSales": 2883.63,
+      "itemsSold": 861,
+      "transactions": 628
+    },
+    {
+      "date": "2023-02-21",
+      "totalSales": 2783.53,
+      "itemsSold": 821,
+      "transactions": 555
+    },
+    {
+      "date": "2023-02-22",
+      "totalSales": 2928.7,
+      "itemsSold": 911,
+      "transactions": 581
+    },
+    {
+      "date": "2023-02-23",
+      "totalSales": 2746.21,
+      "itemsSold": 834,
+      "transactions": 555
+    },
+    {
+      "date": "2023-02-24",
+      "totalSales": 2940.7,
+      "itemsSold": 932,
+      "transactions": 603
+    },
+    {
+      "date": "2023-02-25",
+      "totalSales": 2823.55,
+      "itemsSold": 888,
+      "transactions": 576
+    },
+    {
+      "date": "2023-02-26",
+      "totalSales": 2956.75,
+      "itemsSold": 905,
+      "transactions": 601
+    },
+    {
+      "date": "2023-02-27",
+      "totalSales": 3160,
+      "itemsSold": 1007,
+      "transactions": 663
+    },
+    {
+      "date": "2023-02-28",
+      "totalSales": 2311.1,
+      "itemsSold": 744,
+      "transactions": 511
+    },
+    {
+      "date": "2023-03-01",
+      "totalSales": 3040.25,
+      "itemsSold": 968,
+      "transactions": 661
+    },
+    {
+      "date": "2023-03-02",
+      "totalSales": 2996.05,
+      "itemsSold": 963,
+      "transactions": 673
+    },
+    {
+      "date": "2023-03-03",
+      "totalSales": 3155.15,
+      "itemsSold": 1010,
+      "transactions": 710
+    },
+    {
+      "date": "2023-03-04",
+      "totalSales": 2781.9,
+      "itemsSold": 897,
+      "transactions": 624
+    },
+    {
+      "date": "2023-03-05",
+      "totalSales": 2945.3,
+      "itemsSold": 952,
+      "transactions": 675
+    },
+    {
+      "date": "2023-03-06",
+      "totalSales": 2618.05,
+      "itemsSold": 836,
+      "transactions": 587
+    },
+    {
+      "date": "2023-03-07",
+      "totalSales": 2803.5,
+      "itemsSold": 883,
+      "transactions": 629
+    },
+    {
+      "date": "2023-03-08",
+      "totalSales": 3523.26,
+      "itemsSold": 1039,
+      "transactions": 742
+    },
+    {
+      "date": "2023-03-09",
+      "totalSales": 3459.97,
+      "itemsSold": 983,
+      "transactions": 722
+    },
+    {
+      "date": "2023-03-10",
+      "totalSales": 3441.58,
+      "itemsSold": 1051,
+      "transactions": 750
+    },
+    {
+      "date": "2023-03-11",
+      "totalSales": 3211.65,
+      "itemsSold": 1002,
+      "transactions": 689
+    },
+    {
+      "date": "2023-03-12",
+      "totalSales": 3088.33,
+      "itemsSold": 947,
+      "transactions": 667
+    },
+    {
+      "date": "2023-03-13",
+      "totalSales": 3627.65,
+      "itemsSold": 1110,
+      "transactions": 730
+    },
+    {
+      "date": "2023-03-14",
+      "totalSales": 3312.66,
+      "itemsSold": 918,
+      "transactions": 691
+    },
+    {
+      "date": "2023-03-15",
+      "totalSales": 3338.03,
+      "itemsSold": 1000,
+      "transactions": 721
+    },
+    {
+      "date": "2023-03-16",
+      "totalSales": 3386.11,
+      "itemsSold": 1037,
+      "transactions": 758
+    },
+    {
+      "date": "2023-03-17",
+      "totalSales": 3181.75,
+      "itemsSold": 942,
+      "transactions": 693
+    },
+    {
+      "date": "2023-03-18",
+      "totalSales": 3408.36,
+      "itemsSold": 1001,
+      "transactions": 731
+    },
+    {
+      "date": "2023-03-19",
+      "totalSales": 3340.03,
+      "itemsSold": 988,
+      "transactions": 725
+    },
+    {
+      "date": "2023-03-20",
+      "totalSales": 3262.28,
+      "itemsSold": 988,
+      "transactions": 735
+    },
+    {
+      "date": "2023-03-21",
+      "totalSales": 3209.8,
+      "itemsSold": 949,
+      "transactions": 650
+    },
+    {
+      "date": "2023-03-22",
+      "totalSales": 3284.11,
+      "itemsSold": 1014,
+      "transactions": 669
+    },
+    {
+      "date": "2023-03-23",
+      "totalSales": 3361.13,
+      "itemsSold": 1040,
+      "transactions": 694
+    },
+    {
+      "date": "2023-03-24",
+      "totalSales": 3586.2,
+      "itemsSold": 1111,
+      "transactions": 718
+    },
+    {
+      "date": "2023-03-25",
+      "totalSales": 3380.95,
+      "itemsSold": 1050,
+      "transactions": 688
+    },
+    {
+      "date": "2023-03-26",
+      "totalSales": 3310.83,
+      "itemsSold": 1038,
+      "transactions": 671
+    },
+    {
+      "date": "2023-03-27",
+      "totalSales": 3674.35,
+      "itemsSold": 1177,
+      "transactions": 764
+    },
+    {
+      "date": "2023-03-28",
+      "totalSales": 2792.55,
+      "itemsSold": 897,
+      "transactions": 626
+    },
+    {
+      "date": "2023-03-29",
+      "totalSales": 2492,
+      "itemsSold": 812,
+      "transactions": 582
+    },
+    {
+      "date": "2023-03-30",
+      "totalSales": 2932.82,
+      "itemsSold": 917,
+      "transactions": 639
+    },
+    {
+      "date": "2023-03-31",
+      "totalSales": 2888.08,
+      "itemsSold": 886,
+      "transactions": 615
+    },
+    {
+      "date": "2023-04-01",
+      "totalSales": 3699.9,
+      "itemsSold": 1198,
+      "transactions": 830
+    },
+    {
+      "date": "2023-04-02",
+      "totalSales": 3575.85,
+      "itemsSold": 1156,
+      "transactions": 802
+    },
+    {
+      "date": "2023-04-03",
+      "totalSales": 3604.95,
+      "itemsSold": 1162,
+      "transactions": 814
+    },
+    {
+      "date": "2023-04-04",
+      "totalSales": 3327.3,
+      "itemsSold": 1086,
+      "transactions": 753
+    },
+    {
+      "date": "2023-04-05",
+      "totalSales": 3552.7,
+      "itemsSold": 1136,
+      "transactions": 814
+    },
+    {
+      "date": "2023-04-06",
+      "totalSales": 3250.2,
+      "itemsSold": 1053,
+      "transactions": 739
+    },
+    {
+      "date": "2023-04-07",
+      "totalSales": 3682.8,
+      "itemsSold": 1133,
+      "transactions": 802
+    },
+    {
+      "date": "2023-04-08",
+      "totalSales": 4573.06,
+      "itemsSold": 1327,
+      "transactions": 933
+    },
+    {
+      "date": "2023-04-09",
+      "totalSales": 4088.88,
+      "itemsSold": 1157,
+      "transactions": 848
+    },
+    {
+      "date": "2023-04-10",
+      "totalSales": 4220.3,
+      "itemsSold": 1286,
+      "transactions": 913
+    },
+    {
+      "date": "2023-04-11",
+      "totalSales": 3852.86,
+      "itemsSold": 1237,
+      "transactions": 864
+    },
+    {
+      "date": "2023-04-12",
+      "totalSales": 4040.18,
+      "itemsSold": 1239,
+      "transactions": 867
+    },
+    {
+      "date": "2023-04-13",
+      "totalSales": 4114.53,
+      "itemsSold": 1294,
+      "transactions": 870
+    },
+    {
+      "date": "2023-04-14",
+      "totalSales": 4131.25,
+      "itemsSold": 1114,
+      "transactions": 821
+    },
+    {
+      "date": "2023-04-15",
+      "totalSales": 4121.79,
+      "itemsSold": 1245,
+      "transactions": 881
+    },
+    {
+      "date": "2023-04-16",
+      "totalSales": 4500.39,
+      "itemsSold": 1338,
+      "transactions": 989
+    },
+    {
+      "date": "2023-04-17",
+      "totalSales": 4332.1,
+      "itemsSold": 1117,
+      "transactions": 795
+    },
+    {
+      "date": "2023-04-18",
+      "totalSales": 4354.07,
+      "itemsSold": 1275,
+      "transactions": 910
+    },
+    {
+      "date": "2023-04-19",
+      "totalSales": 4318.31,
+      "itemsSold": 1270,
+      "transactions": 921
+    },
+    {
+      "date": "2023-04-20",
+      "totalSales": 3924.78,
+      "itemsSold": 1177,
+      "transactions": 854
+    },
+    {
+      "date": "2023-04-21",
+      "totalSales": 4005.38,
+      "itemsSold": 1206,
+      "transactions": 809
+    },
+    {
+      "date": "2023-04-22",
+      "totalSales": 3961.58,
+      "itemsSold": 1238,
+      "transactions": 798
+    },
+    {
+      "date": "2023-04-23",
+      "totalSales": 4321.29,
+      "itemsSold": 1306,
+      "transactions": 855
+    },
+    {
+      "date": "2023-04-24",
+      "totalSales": 4265.45,
+      "itemsSold": 1342,
+      "transactions": 893
+    },
+    {
+      "date": "2023-04-25",
+      "totalSales": 4255,
+      "itemsSold": 1335,
+      "transactions": 863
+    },
+    {
+      "date": "2023-04-26",
+      "totalSales": 4559.45,
+      "itemsSold": 1396,
+      "transactions": 915
+    },
+    {
+      "date": "2023-04-27",
+      "totalSales": 4427.1,
+      "itemsSold": 1477,
+      "transactions": 954
+    },
+    {
+      "date": "2023-04-28",
+      "totalSales": 3373.8,
+      "itemsSold": 1099,
+      "transactions": 769
+    },
+    {
+      "date": "2023-04-29",
+      "totalSales": 2953.5,
+      "itemsSold": 954,
+      "transactions": 674
+    },
+    {
+      "date": "2023-04-30",
+      "totalSales": 3552.33,
+      "itemsSold": 1116,
+      "transactions": 785
+    },
+    {
+      "date": "2023-05-01",
+      "totalSales": 4731.45,
+      "itemsSold": 1515,
+      "transactions": 1050
+    },
+    {
+      "date": "2023-05-02",
+      "totalSales": 4625.5,
+      "itemsSold": 1495,
+      "transactions": 1040
+    },
+    {
+      "date": "2023-05-03",
+      "totalSales": 4714.6,
+      "itemsSold": 1523,
+      "transactions": 1076
+    },
+    {
+      "date": "2023-05-04",
+      "totalSales": 4589.7,
+      "itemsSold": 1483,
+      "transactions": 1029
+    },
+    {
+      "date": "2023-05-05",
+      "totalSales": 4701,
+      "itemsSold": 1507,
+      "transactions": 1062
+    },
+    {
+      "date": "2023-05-06",
+      "totalSales": 4205.15,
+      "itemsSold": 1364,
+      "transactions": 955
+    },
+    {
+      "date": "2023-05-07",
+      "totalSales": 4542.7,
+      "itemsSold": 1444,
+      "transactions": 1012
+    },
+    {
+      "date": "2023-05-08",
+      "totalSales": 5604.21,
+      "itemsSold": 1694,
+      "transactions": 1186
+    },
+    {
+      "date": "2023-05-09",
+      "totalSales": 5100.97,
+      "itemsSold": 1475,
+      "transactions": 1094
+    },
+    {
+      "date": "2023-05-10",
+      "totalSales": 5256.33,
+      "itemsSold": 1643,
+      "transactions": 1163
+    },
+    {
+      "date": "2023-05-11",
+      "totalSales": 4850.06,
+      "itemsSold": 1512,
+      "transactions": 1067
+    },
+    {
+      "date": "2023-05-12",
+      "totalSales": 4681.13,
+      "itemsSold": 1493,
+      "transactions": 1040
+    },
+    {
+      "date": "2023-05-13",
+      "totalSales": 5511.53,
+      "itemsSold": 1717,
+      "transactions": 1148
+    },
+    {
+      "date": "2023-05-14",
+      "totalSales": 5052.65,
+      "itemsSold": 1439,
+      "transactions": 1071
+    },
+    {
+      "date": "2023-05-15",
+      "totalSales": 5384.98,
+      "itemsSold": 1610,
+      "transactions": 1156
+    },
+    {
+      "date": "2023-05-16",
+      "totalSales": 5542.13,
+      "itemsSold": 1657,
+      "transactions": 1219
+    },
+    {
+      "date": "2023-05-17",
+      "totalSales": 5418,
+      "itemsSold": 1435,
+      "transactions": 1014
+    },
+    {
+      "date": "2023-05-18",
+      "totalSales": 5583.47,
+      "itemsSold": 1659,
+      "transactions": 1192
+    },
+    {
+      "date": "2023-05-19",
+      "totalSales": 5657.88,
+      "itemsSold": 1702,
+      "transactions": 1214
+    },
+    {
+      "date": "2023-05-20",
+      "totalSales": 5519.28,
+      "itemsSold": 1593,
+      "transactions": 1166
+    },
+    {
+      "date": "2023-05-21",
+      "totalSales": 5370.81,
+      "itemsSold": 1567,
+      "transactions": 1053
+    },
+    {
+      "date": "2023-05-22",
+      "totalSales": 5541.16,
+      "itemsSold": 1729,
+      "transactions": 1117
+    },
+    {
+      "date": "2023-05-23",
+      "totalSales": 5242.91,
+      "itemsSold": 1641,
+      "transactions": 1075
+    },
+    {
+      "date": "2023-05-24",
+      "totalSales": 5391.45,
+      "itemsSold": 1682,
+      "transactions": 1104
+    },
+    {
+      "date": "2023-05-25",
+      "totalSales": 5230.85,
+      "itemsSold": 1613,
+      "transactions": 1043
+    },
+    {
+      "date": "2023-05-26",
+      "totalSales": 5300.95,
+      "itemsSold": 1661,
+      "transactions": 1089
+    },
+    {
+      "date": "2023-05-27",
+      "totalSales": 5559.15,
+      "itemsSold": 1815,
+      "transactions": 1183
+    },
+    {
+      "date": "2023-05-28",
+      "totalSales": 4338.65,
+      "itemsSold": 1402,
+      "transactions": 999
+    },
+    {
+      "date": "2023-05-29",
+      "totalSales": 3959.5,
+      "itemsSold": 1270,
+      "transactions": 906
+    },
+    {
+      "date": "2023-05-30",
+      "totalSales": 4835.48,
+      "itemsSold": 1465,
+      "transactions": 1022
+    },
+    {
+      "date": "2023-05-31",
+      "totalSales": 4684.13,
+      "itemsSold": 1428,
+      "transactions": 982
+    },
+    {
+      "date": "2023-06-01",
+      "totalSales": 5227,
+      "itemsSold": 1676,
+      "transactions": 1150
+    },
+    {
+      "date": "2023-06-02",
+      "totalSales": 5056.5,
+      "itemsSold": 1642,
+      "transactions": 1143
+    },
+    {
+      "date": "2023-06-03",
+      "totalSales": 5166.65,
+      "itemsSold": 1654,
+      "transactions": 1160
+    },
+    {
+      "date": "2023-06-04",
+      "totalSales": 4985.15,
+      "itemsSold": 1619,
+      "transactions": 1114
+    },
+    {
+      "date": "2023-06-05",
+      "totalSales": 4911.15,
+      "itemsSold": 1577,
+      "transactions": 1110
+    },
+    {
+      "date": "2023-06-06",
+      "totalSales": 4598.9,
+      "itemsSold": 1494,
+      "transactions": 1041
+    },
+    {
+      "date": "2023-06-07",
+      "totalSales": 4883.1,
+      "itemsSold": 1536,
+      "transactions": 1083
+    },
+    {
+      "date": "2023-06-08",
+      "totalSales": 6151.59,
+      "itemsSold": 1788,
+      "transactions": 1269
+    },
+    {
+      "date": "2023-06-09",
+      "totalSales": 5867.16,
+      "itemsSold": 1682,
+      "transactions": 1224
+    },
+    {
+      "date": "2023-06-10",
+      "totalSales": 5626.75,
+      "itemsSold": 1708,
+      "transactions": 1210
+    },
+    {
+      "date": "2023-06-11",
+      "totalSales": 5418.61,
+      "itemsSold": 1703,
+      "transactions": 1208
+    },
+    {
+      "date": "2023-06-12",
+      "totalSales": 5328.7,
+      "itemsSold": 1674,
+      "transactions": 1162
+    },
+    {
+      "date": "2023-06-13",
+      "totalSales": 6189.36,
+      "itemsSold": 1938,
+      "transactions": 1281
+    },
+    {
+      "date": "2023-06-14",
+      "totalSales": 5836.52,
+      "itemsSold": 1608,
+      "transactions": 1194
+    },
+    {
+      "date": "2023-06-15",
+      "totalSales": 5806.24,
+      "itemsSold": 1728,
+      "transactions": 1237
+    },
+    {
+      "date": "2023-06-16",
+      "totalSales": 6011.43,
+      "itemsSold": 1824,
+      "transactions": 1331
+    },
+    {
+      "date": "2023-06-17",
+      "totalSales": 6117.6,
+      "itemsSold": 1552,
+      "transactions": 1099
+    },
+    {
+      "date": "2023-06-18",
+      "totalSales": 6026.09,
+      "itemsSold": 1780,
+      "transactions": 1290
+    },
+    {
+      "date": "2023-06-19",
+      "totalSales": 6403.91,
+      "itemsSold": 1858,
+      "transactions": 1343
+    },
+    {
+      "date": "2023-06-20",
+      "totalSales": 5494.66,
+      "itemsSold": 1644,
+      "transactions": 1202
+    },
+    {
+      "date": "2023-06-21",
+      "totalSales": 5808.38,
+      "itemsSold": 1695,
+      "transactions": 1153
+    },
+    {
+      "date": "2023-06-22",
+      "totalSales": 5615.1,
+      "itemsSold": 1770,
+      "transactions": 1147
+    },
+    {
+      "date": "2023-06-23",
+      "totalSales": 5781.86,
+      "itemsSold": 1795,
+      "transactions": 1167
+    },
+    {
+      "date": "2023-06-24",
+      "totalSales": 5906.1,
+      "itemsSold": 1846,
+      "transactions": 1214
+    },
+    {
+      "date": "2023-06-25",
+      "totalSales": 5754.85,
+      "itemsSold": 1802,
+      "transactions": 1174
+    },
+    {
+      "date": "2023-06-26",
+      "totalSales": 5875.9,
+      "itemsSold": 1837,
+      "transactions": 1195
+    },
+    {
+      "date": "2023-06-27",
+      "totalSales": 5975.65,
+      "itemsSold": 1962,
+      "transactions": 1277
+    },
+    {
+      "date": "2023-06-28",
+      "totalSales": 4728.9,
+      "itemsSold": 1531,
+      "transactions": 1070
+    },
+    {
+      "date": "2023-06-29",
+      "totalSales": 4450.75,
+      "itemsSold": 1429,
+      "transactions": 1009
+    },
+    {
+      "date": "2023-06-30",
+      "totalSales": 5481.32,
+      "itemsSold": 1590,
+      "transactions": 1095
+    }
+  ],
+  "category": [
+    {
+      "category": "Coffee",
+      "totalSales": 269952.45,
+      "itemsSold": 89250,
+      "transactions": 58416
+    },
+    {
+      "category": "Tea",
+      "totalSales": 196405.95,
+      "itemsSold": 69737,
+      "transactions": 45449
+    },
+    {
+      "category": "Bakery",
+      "totalSales": 82315.64,
+      "itemsSold": 23214,
+      "transactions": 22796
+    },
+    {
+      "category": "Drinking Chocolate",
+      "totalSales": 72416,
+      "itemsSold": 17457,
+      "transactions": 11468
+    },
+    {
+      "category": "Coffee beans",
+      "totalSales": 40085.25,
+      "itemsSold": 1828,
+      "transactions": 1753
+    },
+    {
+      "category": "Branded",
+      "totalSales": 13607,
+      "itemsSold": 776,
+      "transactions": 747
+    },
+    {
+      "category": "Loose Tea",
+      "totalSales": 11213.6,
+      "itemsSold": 1210,
+      "transactions": 1210
+    },
+    {
+      "category": "Flavours",
+      "totalSales": 8408.8,
+      "itemsSold": 10511,
+      "transactions": 6790
+    },
+    {
+      "category": "Packaged Chocolate",
+      "totalSales": 4407.64,
+      "itemsSold": 487,
+      "transactions": 487
+    }
+  ],
+  "store": [
+    {
+      "store": "Hell's Kitchen",
+      "totalSales": 236511.17,
+      "itemsSold": 71737,
+      "transactions": 50735
+    },
+    {
+      "store": "Astoria",
+      "totalSales": 232243.91,
+      "itemsSold": 70991,
+      "transactions": 50599
+    },
+    {
+      "store": "Lower Manhattan",
+      "totalSales": 230057.25,
+      "itemsSold": 71742,
+      "transactions": 47782
+    }
+  ],
+  "topProducts": [
+    {
+      "productDetail": "Sustainably Grown Organic Lg",
+      "productCategory": "Drinking Chocolate",
+      "totalSales": 21151.75,
+      "itemsSold": 4453,
+      "transactions": 2961
+    },
+    {
+      "productDetail": "Dark chocolate Lg",
+      "productCategory": "Drinking Chocolate",
+      "totalSales": 21006,
+      "itemsSold": 4668,
+      "transactions": 3029
+    },
+    {
+      "productDetail": "Latte Rg",
+      "productCategory": "Coffee",
+      "totalSales": 19112.25,
+      "itemsSold": 4497,
+      "transactions": 2896
+    },
+    {
+      "productDetail": "Cappuccino Lg",
+      "productCategory": "Coffee",
+      "totalSales": 17641.75,
+      "itemsSold": 4151,
+      "transactions": 2772
+    },
+    {
+      "productDetail": "Morning Sunrise Chai Lg",
+      "productCategory": "Tea",
+      "totalSales": 17384,
+      "itemsSold": 4346,
+      "transactions": 2830
+    },
+    {
+      "productDetail": "Latte",
+      "productCategory": "Coffee",
+      "totalSales": 17257.5,
+      "itemsSold": 4602,
+      "transactions": 2990
+    },
+    {
+      "productDetail": "Jamaican Coffee River Lg",
+      "productCategory": "Coffee",
+      "totalSales": 16481.25,
+      "itemsSold": 4395,
+      "transactions": 2911
+    },
+    {
+      "productDetail": "Sustainably Grown Organic Rg",
+      "productCategory": "Drinking Chocolate",
+      "totalSales": 16233.75,
+      "itemsSold": 4329,
+      "transactions": 2842
+    },
+    {
+      "productDetail": "Cappuccino",
+      "productCategory": "Coffee",
+      "totalSales": 15997.5,
+      "itemsSold": 4266,
+      "transactions": 2793
+    },
+    {
+      "productDetail": "Brazilian Lg",
+      "productCategory": "Coffee",
+      "totalSales": 15109.5,
+      "itemsSold": 4317,
+      "transactions": 2771
+    },
+    {
+      "productDetail": "Ethiopia Lg",
+      "productCategory": "Coffee",
+      "totalSales": 14794.5,
+      "itemsSold": 4227,
+      "transactions": 2741
+    },
+    {
+      "productDetail": "Dark chocolate Rg",
+      "productCategory": "Drinking Chocolate",
+      "totalSales": 14024.5,
+      "itemsSold": 4007,
+      "transactions": 2636
+    },
+    {
+      "productDetail": "Spicy Eye Opener Chai Lg",
+      "productCategory": "Tea",
+      "totalSales": 13652.4,
+      "itemsSold": 4404,
+      "transactions": 2951
+    },
+    {
+      "productDetail": "Ethiopia Rg",
+      "productCategory": "Coffee",
+      "totalSales": 13179,
+      "itemsSold": 4393,
+      "transactions": 2866
+    },
+    {
+      "productDetail": "Brazilian Rg",
+      "productCategory": "Coffee",
+      "totalSales": 13155,
+      "itemsSold": 4385,
+      "transactions": 2904
+    },
+    {
+      "productDetail": "Peppermint Lg",
+      "productCategory": "Tea",
+      "totalSales": 13050,
+      "itemsSold": 4350,
+      "transactions": 2857
+    },
+    {
+      "productDetail": "English Breakfast Lg",
+      "productCategory": "Tea",
+      "totalSales": 12927,
+      "itemsSold": 4309,
+      "transactions": 2852
+    },
+    {
+      "productDetail": "Earl Grey Lg",
+      "productCategory": "Tea",
+      "totalSales": 12735,
+      "itemsSold": 4245,
+      "transactions": 2702
+    },
+    {
+      "productDetail": "Serenity Green Tea Lg",
+      "productCategory": "Tea",
+      "totalSales": 12660,
+      "itemsSold": 4220,
+      "transactions": 2750
+    },
+    {
+      "productDetail": "Columbian Medium Roast Lg",
+      "productCategory": "Coffee",
+      "totalSales": 12585,
+      "itemsSold": 4195,
+      "transactions": 2731
+    }
+  ],
+  "sampleRows": [
+    {
+      "transactionId": 149456,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Flavours",
+      "productDetail": "Hazelnut syrup",
+      "quantity": 2,
+      "unitPrice": 0.8,
+      "totalAmount": 1.6
+    },
+    {
+      "transactionId": 149455,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Cappuccino",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149454,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Tea",
+      "productDetail": "Peppermint Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149453,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Tea",
+      "productDetail": "English Breakfast Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149452,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Tea",
+      "productDetail": "Peppermint Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149451,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Lemon Grass Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149450,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Tea",
+      "productDetail": "Morning Sunrise Chai Lg",
+      "quantity": 2,
+      "unitPrice": 4,
+      "totalAmount": 8
+    },
+    {
+      "transactionId": 149449,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Cranberry Scone",
+      "quantity": 1,
+      "unitPrice": 3.25,
+      "totalAmount": 3.25
+    },
+    {
+      "transactionId": 149448,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Morning Sunrise Chai Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149447,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Lg",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149446,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149445,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Jamaican Coffee River Sm",
+      "quantity": 2,
+      "unitPrice": 2.45,
+      "totalAmount": 4.9
+    },
+    {
+      "transactionId": 149444,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Rg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149443,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Earl Grey Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149442,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Bakery",
+      "productDetail": "Croissant",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149441,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Lg",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149440,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Tea",
+      "productDetail": "Morning Sunrise Chai Lg",
+      "quantity": 2,
+      "unitPrice": 4,
+      "totalAmount": 8
+    },
+    {
+      "transactionId": 149439,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Serenity Green Tea Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149438,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Cappuccino Lg",
+      "quantity": 1,
+      "unitPrice": 4.25,
+      "totalAmount": 4.25
+    },
+    {
+      "transactionId": 149437,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Ginger Scone",
+      "quantity": 2,
+      "unitPrice": 3.25,
+      "totalAmount": 6.5
+    },
+    {
+      "transactionId": 149436,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Sustainably Grown Organic Rg",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149435,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Dark chocolate Rg",
+      "quantity": 2,
+      "unitPrice": 3.5,
+      "totalAmount": 7
+    },
+    {
+      "transactionId": 149434,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Bakery",
+      "productDetail": "Ginger Scone",
+      "quantity": 1,
+      "unitPrice": 3.25,
+      "totalAmount": 3.25
+    },
+    {
+      "transactionId": 149433,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Sm",
+      "quantity": 1,
+      "unitPrice": 2.2,
+      "totalAmount": 2.2
+    },
+    {
+      "transactionId": 149432,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Cappuccino Lg",
+      "quantity": 2,
+      "unitPrice": 4.25,
+      "totalAmount": 8.5
+    },
+    {
+      "transactionId": 149431,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Jamaican Coffee River Lg",
+      "quantity": 2,
+      "unitPrice": 3.75,
+      "totalAmount": 7.5
+    },
+    {
+      "transactionId": 149430,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee beans",
+      "productDetail": "Brazilian - Organic",
+      "quantity": 1,
+      "unitPrice": 18,
+      "totalAmount": 18
+    },
+    {
+      "transactionId": 149429,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Tea",
+      "productDetail": "English Breakfast Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149428,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149427,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Rg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149426,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Tea",
+      "productDetail": "Serenity Green Tea Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149425,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Lemon Grass Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149424,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Lemon Grass Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149423,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149422,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Jamaican Coffee River Rg",
+      "quantity": 1,
+      "unitPrice": 3.1,
+      "totalAmount": 3.1
+    },
+    {
+      "transactionId": 149421,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Peppermint Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149420,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Latte",
+      "quantity": 2,
+      "unitPrice": 3.75,
+      "totalAmount": 7.5
+    },
+    {
+      "transactionId": 149419,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Traditional Blend Chai Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149418,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Espresso shot",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149417,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "English Breakfast Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149416,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Dark chocolate Lg",
+      "quantity": 2,
+      "unitPrice": 4.5,
+      "totalAmount": 9
+    },
+    {
+      "transactionId": 149415,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Lg",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149414,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Lemon Grass Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149413,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Rg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149412,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Sustainably Grown Organic Rg",
+      "quantity": 2,
+      "unitPrice": 3.75,
+      "totalAmount": 7.5
+    },
+    {
+      "transactionId": 149411,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "English Breakfast Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149410,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Latte Rg",
+      "quantity": 1,
+      "unitPrice": 4.25,
+      "totalAmount": 4.25
+    },
+    {
+      "transactionId": 149409,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Earl Grey Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149408,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Rg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149407,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Espresso shot",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149406,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Sm",
+      "quantity": 2,
+      "unitPrice": 2,
+      "totalAmount": 4
+    },
+    {
+      "transactionId": 149405,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee beans",
+      "productDetail": "Espresso Roast",
+      "quantity": 1,
+      "unitPrice": 14.75,
+      "totalAmount": 14.75
+    },
+    {
+      "transactionId": 149404,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Jumbo Savory Scone",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149403,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Rg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149402,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Earl Grey Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149401,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Dark chocolate Lg",
+      "quantity": 1,
+      "unitPrice": 4.5,
+      "totalAmount": 4.5
+    },
+    {
+      "transactionId": 149400,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Flavours",
+      "productDetail": "Sugar Free Vanilla syrup",
+      "quantity": 2,
+      "unitPrice": 0.8,
+      "totalAmount": 1.6
+    },
+    {
+      "transactionId": 149399,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Espresso shot",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149398,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Jamaican Coffee River Rg",
+      "quantity": 2,
+      "unitPrice": 3.1,
+      "totalAmount": 6.2
+    },
+    {
+      "transactionId": 149397,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Lg",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149396,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "English Breakfast Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149395,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Morning Sunrise Chai Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149394,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Almond Croissant",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149393,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Rg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149392,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Serenity Green Tea Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149391,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Oatmeal Scone",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149390,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Espresso shot",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149389,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Morning Sunrise Chai Lg",
+      "quantity": 2,
+      "unitPrice": 4,
+      "totalAmount": 8
+    },
+    {
+      "transactionId": 149388,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Bakery",
+      "productDetail": "Ginger Scone",
+      "quantity": 1,
+      "unitPrice": 3.25,
+      "totalAmount": 3.25
+    },
+    {
+      "transactionId": 149387,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Dark chocolate Lg",
+      "quantity": 1,
+      "unitPrice": 4.5,
+      "totalAmount": 4.5
+    },
+    {
+      "transactionId": 149386,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Sm",
+      "quantity": 2,
+      "unitPrice": 2,
+      "totalAmount": 4
+    },
+    {
+      "transactionId": 149385,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149384,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Morning Sunrise Chai Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149383,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Sm",
+      "quantity": 2,
+      "unitPrice": 2,
+      "totalAmount": 4
+    },
+    {
+      "transactionId": 149382,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Tea",
+      "productDetail": "Spicy Eye Opener Chai Lg",
+      "quantity": 1,
+      "unitPrice": 3.1,
+      "totalAmount": 3.1
+    },
+    {
+      "transactionId": 149381,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Bakery",
+      "productDetail": "Croissant",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149380,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Sm",
+      "quantity": 1,
+      "unitPrice": 2.2,
+      "totalAmount": 2.2
+    },
+    {
+      "transactionId": 149379,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Jamaican Coffee River Sm",
+      "quantity": 1,
+      "unitPrice": 2.45,
+      "totalAmount": 2.45
+    },
+    {
+      "transactionId": 149378,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Dark chocolate Rg",
+      "quantity": 2,
+      "unitPrice": 3.5,
+      "totalAmount": 7
+    },
+    {
+      "transactionId": 149377,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Sustainably Grown Organic Rg",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149376,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Dark chocolate Rg",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149375,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Jamaican Coffee River Sm",
+      "quantity": 1,
+      "unitPrice": 2.45,
+      "totalAmount": 2.45
+    },
+    {
+      "transactionId": 149374,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Bakery",
+      "productDetail": "Hazelnut Biscotti",
+      "quantity": 1,
+      "unitPrice": 3.25,
+      "totalAmount": 3.25
+    },
+    {
+      "transactionId": 149373,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Tea",
+      "productDetail": "Earl Grey Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149372,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Flavours",
+      "productDetail": "Chocolate syrup",
+      "quantity": 1,
+      "unitPrice": 0.8,
+      "totalAmount": 0.8
+    },
+    {
+      "transactionId": 149371,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Cappuccino",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149370,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Ouro Brasileiro shot",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149369,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Bakery",
+      "productDetail": "Oatmeal Scone",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149368,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Traditional Blend Chai Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149367,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Spicy Eye Opener Chai Lg",
+      "quantity": 1,
+      "unitPrice": 3.1,
+      "totalAmount": 3.1
+    },
+    {
+      "transactionId": 149366,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Jamaican Coffee River Rg",
+      "quantity": 1,
+      "unitPrice": 3.1,
+      "totalAmount": 3.1
+    },
+    {
+      "transactionId": 149365,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Sm",
+      "quantity": 2,
+      "unitPrice": 2.2,
+      "totalAmount": 4.4
+    },
+    {
+      "transactionId": 149364,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Spicy Eye Opener Chai Rg",
+      "quantity": 2,
+      "unitPrice": 2.55,
+      "totalAmount": 5.1
+    },
+    {
+      "transactionId": 149363,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Tea",
+      "productDetail": "Lemon Grass Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149362,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Sm",
+      "quantity": 2,
+      "unitPrice": 2.2,
+      "totalAmount": 4.4
+    },
+    {
+      "transactionId": 149361,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Bakery",
+      "productDetail": "Cranberry Scone",
+      "quantity": 1,
+      "unitPrice": 3.25,
+      "totalAmount": 3.25
+    },
+    {
+      "transactionId": 149360,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Traditional Blend Chai Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149359,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149358,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Packaged Chocolate",
+      "productDetail": "Dark chocolate",
+      "quantity": 1,
+      "unitPrice": 6.4,
+      "totalAmount": 6.4
+    },
+    {
+      "transactionId": 149357,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Bakery",
+      "productDetail": "Almond Croissant",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149356,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149355,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Bakery",
+      "productDetail": "Scottish Cream Scone",
+      "quantity": 1,
+      "unitPrice": 4.5,
+      "totalAmount": 4.5
+    },
+    {
+      "transactionId": 149354,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Flavours",
+      "productDetail": "Carmel syrup",
+      "quantity": 2,
+      "unitPrice": 0.8,
+      "totalAmount": 1.6
+    },
+    {
+      "transactionId": 149353,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Latte Rg",
+      "quantity": 3,
+      "unitPrice": 4.25,
+      "totalAmount": 12.75
+    },
+    {
+      "transactionId": 149352,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Chocolate Chip Biscotti",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149351,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Jamaican Coffee River Lg",
+      "quantity": 2,
+      "unitPrice": 3.75,
+      "totalAmount": 7.5
+    },
+    {
+      "transactionId": 149350,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Dark chocolate Rg",
+      "quantity": 2,
+      "unitPrice": 3.5,
+      "totalAmount": 7
+    },
+    {
+      "transactionId": 149349,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149348,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Latte",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149347,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Earl Grey Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149346,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Cappuccino",
+      "quantity": 2,
+      "unitPrice": 3.75,
+      "totalAmount": 7.5
+    },
+    {
+      "transactionId": 149345,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Bakery",
+      "productDetail": "Scottish Cream Scone",
+      "quantity": 1,
+      "unitPrice": 4.5,
+      "totalAmount": 4.5
+    },
+    {
+      "transactionId": 149344,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Tea",
+      "productDetail": "Peppermint Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149343,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Lg",
+      "quantity": 2,
+      "unitPrice": 3.5,
+      "totalAmount": 7
+    },
+    {
+      "transactionId": 149342,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149341,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Sm",
+      "quantity": 2,
+      "unitPrice": 2.2,
+      "totalAmount": 4.4
+    },
+    {
+      "transactionId": 149340,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Lg",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149339,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Hazelnut Biscotti",
+      "quantity": 1,
+      "unitPrice": 3.25,
+      "totalAmount": 3.25
+    },
+    {
+      "transactionId": 149338,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Spicy Eye Opener Chai Rg",
+      "quantity": 1,
+      "unitPrice": 2.55,
+      "totalAmount": 2.55
+    },
+    {
+      "transactionId": 149337,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Lg",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149336,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Sm",
+      "quantity": 1,
+      "unitPrice": 2.2,
+      "totalAmount": 2.2
+    },
+    {
+      "transactionId": 149335,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Flavours",
+      "productDetail": "Carmel syrup",
+      "quantity": 1,
+      "unitPrice": 0.8,
+      "totalAmount": 0.8
+    },
+    {
+      "transactionId": 149334,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Cappuccino",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149333,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Jumbo Savory Scone",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149332,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Traditional Blend Chai Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149331,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Bakery",
+      "productDetail": "Jumbo Savory Scone",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149330,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Sm",
+      "quantity": 2,
+      "unitPrice": 2,
+      "totalAmount": 4
+    },
+    {
+      "transactionId": 149329,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Peppermint Rg",
+      "quantity": 3,
+      "unitPrice": 2.5,
+      "totalAmount": 7.5
+    },
+    {
+      "transactionId": 149328,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Spicy Eye Opener Chai Rg",
+      "quantity": 1,
+      "unitPrice": 2.55,
+      "totalAmount": 2.55
+    },
+    {
+      "transactionId": 149327,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Traditional Blend Chai Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149326,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Loose Tea",
+      "productDetail": "Lemon Grass",
+      "quantity": 1,
+      "unitPrice": 8.95,
+      "totalAmount": 8.95
+    },
+    {
+      "transactionId": 149325,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Sm",
+      "quantity": 1,
+      "unitPrice": 2,
+      "totalAmount": 2
+    },
+    {
+      "transactionId": 149324,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Sm",
+      "quantity": 2,
+      "unitPrice": 2,
+      "totalAmount": 4
+    },
+    {
+      "transactionId": 149323,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Serenity Green Tea Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149322,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Chocolate Croissant",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149321,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Traditional Blend Chai Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149320,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Dark chocolate Lg",
+      "quantity": 1,
+      "unitPrice": 4.5,
+      "totalAmount": 4.5
+    },
+    {
+      "transactionId": 149319,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Ouro Brasileiro shot",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149318,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Rg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149317,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Morning Sunrise Chai Lg",
+      "quantity": 1,
+      "unitPrice": 4,
+      "totalAmount": 4
+    },
+    {
+      "transactionId": 149316,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Espresso shot",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149315,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Peppermint Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149314,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Scottish Cream Scone",
+      "quantity": 1,
+      "unitPrice": 4.5,
+      "totalAmount": 4.5
+    },
+    {
+      "transactionId": 149313,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Earl Grey Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149312,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149311,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "English Breakfast Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149310,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149309,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Bakery",
+      "productDetail": "Croissant",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149308,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Sm",
+      "quantity": 1,
+      "unitPrice": 2,
+      "totalAmount": 2
+    },
+    {
+      "transactionId": 149307,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Dark chocolate Lg",
+      "quantity": 1,
+      "unitPrice": 4.5,
+      "totalAmount": 4.5
+    },
+    {
+      "transactionId": 149306,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Lg",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149305,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149304,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149303,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Earl Grey Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149302,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Morning Sunrise Chai Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149301,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Sustainably Grown Organic Rg",
+      "quantity": 2,
+      "unitPrice": 3.75,
+      "totalAmount": 7.5
+    },
+    {
+      "transactionId": 149300,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Spicy Eye Opener Chai Lg",
+      "quantity": 2,
+      "unitPrice": 3.1,
+      "totalAmount": 6.2
+    },
+    {
+      "transactionId": 149299,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Peppermint Lg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149298,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "English Breakfast Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149297,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Ouro Brasileiro shot",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149296,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149295,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Bakery",
+      "productDetail": "Hazelnut Biscotti",
+      "quantity": 1,
+      "unitPrice": 3.25,
+      "totalAmount": 3.25
+    },
+    {
+      "transactionId": 149294,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Rg",
+      "quantity": 2,
+      "unitPrice": 2.5,
+      "totalAmount": 5
+    },
+    {
+      "transactionId": 149293,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149292,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Serenity Green Tea Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149291,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149290,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Lg",
+      "quantity": 2,
+      "unitPrice": 3.5,
+      "totalAmount": 7
+    },
+    {
+      "transactionId": 149289,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Flavours",
+      "productDetail": "Carmel syrup",
+      "quantity": 2,
+      "unitPrice": 0.8,
+      "totalAmount": 1.6
+    },
+    {
+      "transactionId": 149288,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Espresso shot",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149287,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Lg",
+      "quantity": 2,
+      "unitPrice": 3.5,
+      "totalAmount": 7
+    },
+    {
+      "transactionId": 149286,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Columbian Medium Roast Sm",
+      "quantity": 2,
+      "unitPrice": 2,
+      "totalAmount": 4
+    },
+    {
+      "transactionId": 149285,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Brazilian Sm",
+      "quantity": 3,
+      "unitPrice": 2.2,
+      "totalAmount": 6.6
+    },
+    {
+      "transactionId": 149284,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Rg",
+      "quantity": 3,
+      "unitPrice": 2.5,
+      "totalAmount": 7.5
+    },
+    {
+      "transactionId": 149283,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Cappuccino",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149282,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Cappuccino Lg",
+      "quantity": 2,
+      "unitPrice": 4.25,
+      "totalAmount": 8.5
+    },
+    {
+      "transactionId": 149281,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Flavours",
+      "productDetail": "Hazelnut syrup",
+      "quantity": 1,
+      "unitPrice": 0.8,
+      "totalAmount": 0.8
+    },
+    {
+      "transactionId": 149280,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Coffee",
+      "productDetail": "Espresso shot",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149279,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Dark chocolate Rg",
+      "quantity": 2,
+      "unitPrice": 3.5,
+      "totalAmount": 7
+    },
+    {
+      "transactionId": 149278,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Rg",
+      "quantity": 2,
+      "unitPrice": 3,
+      "totalAmount": 6
+    },
+    {
+      "transactionId": 149277,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Ginger Scone",
+      "quantity": 1,
+      "unitPrice": 3.25,
+      "totalAmount": 3.25
+    },
+    {
+      "transactionId": 149276,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Ethiopia Lg",
+      "quantity": 2,
+      "unitPrice": 3.5,
+      "totalAmount": 7
+    },
+    {
+      "transactionId": 149275,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Bakery",
+      "productDetail": "Croissant",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149274,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Lemon Grass Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149273,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Spicy Eye Opener Chai Rg",
+      "quantity": 2,
+      "unitPrice": 2.55,
+      "totalAmount": 5.1
+    },
+    {
+      "transactionId": 149272,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Scottish Cream Scone",
+      "quantity": 1,
+      "unitPrice": 4.5,
+      "totalAmount": 4.5
+    },
+    {
+      "transactionId": 149271,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Sm",
+      "quantity": 2,
+      "unitPrice": 2,
+      "totalAmount": 4
+    },
+    {
+      "transactionId": 149270,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Cranberry Scone",
+      "quantity": 1,
+      "unitPrice": 3.25,
+      "totalAmount": 3.25
+    },
+    {
+      "transactionId": 149269,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Our Old Time Diner Blend Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149268,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee beans",
+      "productDetail": "Jamacian Coffee River",
+      "quantity": 1,
+      "unitPrice": 19.75,
+      "totalAmount": 19.75
+    },
+    {
+      "transactionId": 149267,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Chocolate Croissant",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149266,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Earl Grey Lg",
+      "quantity": 1,
+      "unitPrice": 3,
+      "totalAmount": 3
+    },
+    {
+      "transactionId": 149265,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Tea",
+      "productDetail": "Spicy Eye Opener Chai Rg",
+      "quantity": 1,
+      "unitPrice": 2.55,
+      "totalAmount": 2.55
+    },
+    {
+      "transactionId": 149264,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Bakery",
+      "productDetail": "Cranberry Scone",
+      "quantity": 1,
+      "unitPrice": 3.25,
+      "totalAmount": 3.25
+    },
+    {
+      "transactionId": 149263,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Coffee",
+      "productDetail": "Latte",
+      "quantity": 2,
+      "unitPrice": 3.75,
+      "totalAmount": 7.5
+    },
+    {
+      "transactionId": 149262,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Bakery",
+      "productDetail": "Ginger Scone",
+      "quantity": 1,
+      "unitPrice": 3.25,
+      "totalAmount": 3.25
+    },
+    {
+      "transactionId": 149261,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Coffee",
+      "productDetail": "Jamaican Coffee River Lg",
+      "quantity": 1,
+      "unitPrice": 3.75,
+      "totalAmount": 3.75
+    },
+    {
+      "transactionId": 149260,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Serenity Green Tea Rg",
+      "quantity": 1,
+      "unitPrice": 2.5,
+      "totalAmount": 2.5
+    },
+    {
+      "transactionId": 149259,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Lower Manhattan",
+      "productCategory": "Tea",
+      "productDetail": "Spicy Eye Opener Chai Rg",
+      "quantity": 1,
+      "unitPrice": 2.55,
+      "totalAmount": 2.55
+    },
+    {
+      "transactionId": 149258,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Hell's Kitchen",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Dark chocolate Rg",
+      "quantity": 1,
+      "unitPrice": 3.5,
+      "totalAmount": 3.5
+    },
+    {
+      "transactionId": 149257,
+      "transactionDate": "2023-06-30",
+      "storeLocation": "Astoria",
+      "productCategory": "Drinking Chocolate",
+      "productDetail": "Sustainably Grown Organic Lg",
+      "quantity": 1,
+      "unitPrice": 4.75,
+      "totalAmount": 4.75
+    }
+  ]
+}
