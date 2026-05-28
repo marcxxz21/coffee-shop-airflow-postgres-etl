@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Coffee shop sales dashboard built from an Airflow, PostgreSQL, and Streamlit data pipeline."
+      content="Professional coffee shop sales dashboard showing revenue, transaction volume, product mix, and store performance."
     />
     <title>Coffee Shop Sales Dashboard</title>
     <link rel="stylesheet" href="./styles.css" />
@@ -14,16 +14,16 @@
     <main class="shell">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Airflow ETL portfolio dashboard</p>
-          <h1>Coffee sales command view.</h1>
+          <p class="eyebrow">Coffee shop revenue analytics</p>
+          <h1>Sales performance dashboard.</h1>
           <p>
-            Public dashboard for the cleaned PostgreSQL sales dataset. It stays available online
-            even when the local Docker services are stopped.
+            Track revenue, transaction volume, product mix, and store performance from
+            149,116 cleaned sales records processed through an Airflow ETL pipeline.
           </p>
           <div class="status-row">
-            <span><i></i> Online snapshot</span>
-            <span>149k transactions</span>
-            <span>GitHub deployed</span>
+            <span><i></i> Public sales snapshot</span>
+            <span>149,116 transactions analyzed</span>
+            <span>ETL output refreshed</span>
           </div>
         </div>
 
@@ -41,7 +41,7 @@
             <strong id="itemsSold">Loading</strong>
           </div>
           <div class="metric-card">
-            <span>Avg order</span>
+            <span>Average order value</span>
             <strong id="averageOrder">Loading</strong>
           </div>
         </aside>
@@ -64,9 +64,19 @@
       </section>
 
       <section id="loadingState" class="state-grid" aria-label="Loading dashboard">
-        <div class="skeleton"></div>
-        <div class="skeleton"></div>
-        <div class="skeleton span"></div>
+        <div class="loading-panel span">
+          <p class="section-label">Loading sales data</p>
+          <h2>Preparing dashboard metrics</h2>
+          <p>
+            Revenue, transaction, product, and store summaries are being loaded from the
+            published ETL snapshot.
+          </p>
+          <div class="loading-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </section>
 
       <section id="errorState" class="notice hidden" aria-live="polite">
@@ -79,7 +89,7 @@
           <div class="panel-heading">
             <div>
               <p class="section-label">Revenue trend</p>
-              <h2>Daily rhythm</h2>
+              <h2>Daily revenue performance</h2>
             </div>
             <span id="dateRange">Snapshot</span>
           </div>
@@ -90,7 +100,7 @@
           <div class="panel-heading">
             <div>
               <p class="section-label">Category mix</p>
-              <h2>Product families</h2>
+              <h2>Revenue by product category</h2>
             </div>
           </div>
           <div id="categoryBars" class="bar-stack"></div>
@@ -100,7 +110,7 @@
           <div class="panel-heading">
             <div>
               <p class="section-label">Store performance</p>
-              <h2>Location split</h2>
+              <h2>Store revenue comparison</h2>
             </div>
           </div>
           <div id="storeBars" class="bar-stack"></div>
@@ -110,7 +120,7 @@
           <div class="panel-heading">
             <div>
               <p class="section-label">Top products</p>
-              <h2>Highest grossing items</h2>
+              <h2>Best-selling products</h2>
             </div>
           </div>
           <div id="productList" class="product-list"></div>
@@ -120,7 +130,7 @@
           <div class="panel-heading">
             <div>
               <p class="section-label">Transaction sample</p>
-              <h2>Recent records</h2>
+              <h2>Transaction detail sample</h2>
             </div>
           </div>
           <div class="table-wrap">
