@@ -1,0 +1,41 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: coffee_postgres
+    environment:
+      POSTGRES_USER: coffee_user
+      POSTGRES_PASSWORD: coffee_password
+      POSTGRES_DB: coffee_sales_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  airflow:
+    build: .
+    container_name: coffee_airflow
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__CORE__EXECUTOR: "SequentialExecutor"
+
+      POSTGRES_USER: coffee_user
+      POSTGRES_PASSWORD: coffee_password
+      POSTGRES_DB: coffee_sales_db
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+
+    command: standalone
+
+volumes:
+  postgres_data:
